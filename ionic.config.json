@@ -1,0 +1,7 @@
+{
+  "name": "geoinf",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
