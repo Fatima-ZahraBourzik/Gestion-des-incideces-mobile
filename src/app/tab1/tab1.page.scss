@@ -1,0 +1,33 @@
+ion-button{
+    position: relative;
+    margin-top:40vh;
+    width: 100;
+    margin-left: 15vh;
+    
+}
+img{
+    width :30%;
+    justify-content: center;
+
+} 
+.solved{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: bold;
+    position:relative;
+}
+
+.lampe{
+    justify-content: center;
+    width : 60px;
+    height : 60px;
+}
+ion-title{
+    font-weight: bold;
+}
+p{
+    font-size: 0.9em;
+    text-align: center;
+}

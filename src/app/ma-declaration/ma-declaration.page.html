@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Déclaration</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item>
+      <ion-label>Secteur Incident</ion-label>
+      <ion-select interface="popover" class="secteur">
+        <ion-select-option value="brown">Electricité</ion-select-option>
+        <ion-select-option value="blonde">Plomberie</ion-select-option>
+        <ion-select-option value="">Santé</ion-select-option>
+
+        </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Type Incident</ion-label>
+      <ion-select interface="popover" class="type">
+        <ion-select-option value="brown">Fuite</ion-select-option>
+        <ion-select-option value="blonde">Incendie</ion-select-option>
+        <ion-select-option value="black">Panne</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Description de l'incidence</ion-label>
+      <ion-input placeholder="description ici"></ion-input>
+    </ion-item>
+    <ion-button  color="tertiary" expand="block" (click)="takePicture()" > Prendre une photo<ion-icon slot="start" name="camera-outline"></ion-icon>
+    </ion-button>
+    <div class="flex">
+      <div class="img-box">
+        <img [src]="selectedImage?.webPath">
+      </div>
+    </div>
+    <ion-row>
+      <ion-col class = "button">
+        <ion-button  type="submit" color="secondary" (click)="fetchLocation()" >Envoyer</ion-button>
+      </ion-col>
+      <ion-col class = "button">
+        <ion-button type="submit" color="danger" >Annuler</ion-button>
+      </ion-col>
+    </ion-row>
+    
+  </form>
+</ion-content>
